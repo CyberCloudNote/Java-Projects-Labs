@@ -1,0 +1,20 @@
+// The traditional Hello World program.
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+//import statements
+//Check if window closes automatically. Otherwise add suitable code
+public class HelloWorld extends JFrame {
+
+	public static void main(String args[]) {
+		new HelloWorld();
+	}
+	HelloWorld() {
+		JLabel myHelloWorld = new JLabel("Hello World");
+		add(myHelloWorld);
+		this.setSize(100, 100);
+		// pack();
+		setVisible(true);
+	}
+}
